@@ -1,0 +1,150 @@
+body{
+     background-color: #111827;   ;
+     
+}
+h1{
+    
+    font-family: "google sans flex",sans-serif;
+    text-align: left;
+    color: #F2D6C9;
+}
+header {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0px;
+    background-color:#111827;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(207, 194, 194, 0.05);
+     font-family: "google sans flex",sans-serif;
+}
+
+
+.hobby-list {
+    list-style: none; 
+    align-items: center;
+    margin-top: 5px;
+}
+
+.hobby-list li {
+    font-size: 1.1rem;
+    color:#F2D6C9;
+    margin-bottom: 14px;
+    padding-left: 24px;
+    position: relative;
+     font-family: "google sans flex",sans-serif;
+}
+
+
+.hobby-list li::before {
+    content: "⌘";
+    color: #63E6BE; 
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+h2{
+    color:#F2D6C9;
+    font-family: "google sans flex",sans-serif;
+}
+
+.hobby-list strong {
+    color: #F2D6C9;
+    font-weight: 600;
+     font-family: "google sans flex",sans-serif
+}
+.Hobbies{
+    color:#F2D6C9;
+    
+}
+ul{
+     min-height: 80vh;  
+    padding-top: 80px;
+
+}
+.logo{
+     font-size: 1.4rem;
+    font-weight: 700;
+    color:#F2D6C9;
+    margin-left: 10px;
+}
+.nav-links{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar a{
+     color:#F2D6C9;
+     padding:10px 15px;
+     text-decoration: none;
+}
+.nav-links a:hover{
+     color:#63E6BE;
+     
+}
+.icons{
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+#abc{
+     margin-right: 10px;
+     border-radius: 100px;
+     max-width: 100%;
+     height: auto;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 40px 20px;
+}
+.section {
+    min-height: 80vh;  
+    padding-top: 10px;
+    color: #F2D6C9;
+    font-family: "google sans flex",sans-serif;
+    scroll-margin-top: 90px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    header {
+        padding-top: 160px;
+    }
+
+    .icons {
+        gap: 30px;
+    }
+}
